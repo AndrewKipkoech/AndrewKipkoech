@@ -80,84 +80,56 @@ header{
   width: 100%;
   height: 100vh;
 }
-.top-nav{
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: -100vh;
-  z-index: 50;
-  border-bottom-right-radius: 100%;
-  border-bottom-right-radius: 100%;
-  transition: all 650ms cubic-bezier(1,0,0,1);
 
-}
-.nav-list{
-  list-style: none;
-  width:100%;
-  height: 100%;
-  display: flex;
-  justify-content:center;
-  align-items:center;
-}
-li{
-  margin:0 2rem;
-}
-.nav-link{
-  font-family: 'The Historia Demo', Tahoma;
-  font-size: 3rem;
-  padding: 1rem;
-}
-.nav-link:hover,
-.nav-link:focus{
-  background: linear-gradient(to top, #ffe838,#fd57bf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color:transparent;
-}
-.top-nav.open{
-  top: 0;
-  border-radius: initial;
-
-}
-.menu-toggler{
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  width:5rem;
-  height: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* Navigation bar-dropDown menu */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
-  z-index: 1500;
-  transition: transform 650ms ease-out;
 }
-.menu-toggler.open{
-  transform: rotate(-45deg);
+
+.nav{
+  position:relative;
+  display: inline-block;
+  float: right;
+  padding-top: 100px;
+  margin-right: 50px;
+
+
 }
-.bar{
-  background:linear-gradient(to right, #ffe838,#fd57bf);
-  width: 100%;
-  height: 4px;
-  border-radius: .8rem;
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2F4F4F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
-.bar.half{
-  width: 50%;
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
 }
-bar.start{
-  transform-origin:right;
-  transition: transform 650ms cubic-bezier(0.54,-0.81,0.57,0.57);
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.nav:hover .dropdown-content {
+  display: block;
+
 }
-.open.bar.start{
-  transform: rotate(-450deg) translateX(.8rem);
+
+.nav:hover .dropbtn {
+  background-color: #3e8e41;
+  margin-right: 50px;
+
 }
-bar.end{
-  align-self: flex-end;
-  transform-origin:left;
-  transition: transform 650ms cubic-bezier(0.54,-0.81,0.57,0.57);
-}
-.open .bar.start{
-  transform: rotate(-450deg) translateX(-.8rem);
-}
+/*end nav */
 .landing-text{
   position: absolute;
   top:50%;
