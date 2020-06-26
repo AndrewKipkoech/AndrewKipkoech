@@ -5,6 +5,8 @@
   <meta name="viewport" content="width = device-width initial-scale=1">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <title> Andrew Kipkoech</title>
+
+  <!--All the style sheet-->
   <link rel= "stylesheet" href = "https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity= "sha384-
     IZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin= "anonymous">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,65 +17,88 @@
 </head>
 <body>
 <header>
-
-  <div class = "nav" >
-    <button class = "dropbtn">Menu</button>
-    <div class = "dropdown-content">
-        <a href="index.html" class = "nav-link">Home</a>
-        <a href="#about" class = "nav-link">About</a>
-        <a href="#services" class = "nav-link">Services</a>
-        <a href="#portfolio" class = "nav-link">Portfolio</a>
-        <a href="#experience" class = "nav-link">Experience</a>
-        <a href="#contact" class = "nav-link">Contact</a>
-    </div>
+  <div class="menu-toggler">
+    <div class="bar half start"></div>
+    <div class="bar"></div>
+    <div class="bar half end"></div>
   </div>
+  <nav class="top-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li>
+            <a href="#about" class="nav-link">About</a>
+        </li>
+        <li>
+              <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li>
+            <a href="#skills" class="nav-link">Skills</a>
+      </li>
+        <li>
+            <a href="#contact" class="nav-link">Contact</a>
+      </li>
+      </ul>
+  </nav>
   <div class="landing-text">
     <h1>Andrew Kipkoech</h1>
-    <h6>Web developer | upcoming Software Engineer</h6>
+    <h6>Web | Software Developer</h6>
   </div>
 </header>
+
+<!--About section-->
 <section class = "about" id = "about">
   <div class="container">
     <div class="profile-img">
-      <img src="images/profile.jpg" alt="" height = "200px" width = "100px">
+      <img src="images/profile2.jpeg" alt="" height = "200px" width = "100px">
     </div>
     <div class="about-details">
       <div class = "about-heading">
         <h1>About</h1>
         <h6>Myself</h6>
     </div>
-    <p>Just an overtly ambitious international
-      student at Methodist University aspiring to impact lives in a
-      positive way through technology. I know it's a cliche but why not.
+    <p>I'm born Kenyan. I've lived in South East Asia- Singapore and I currently study
+      CS at Methodist University in Fayetteville NC. I like cooking,coding,reading books,playing soccer
+      and going for a walk in the wilderness. I aspire to be a software developer when I graduate and realise nirvana.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+      and more recently with desktop publishing software
+       like Aldus PageMaker including versions of Lorem Ipsum.
     </p>
     <div class="social-media">
-      <ul = "nav-list">
+      <ul class= "nav-list">
+          <li>
+              <a href="https://www.linkedin.com/in/andrew-kipkoech-994459130" class = "icon-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
         <li>
-          <a href="#" class = "icon-link">
-            <i class =" fab fa-facebook-square"></i>
+          <a href="https://github.com/AndrewKipkoech" class="icon-link">
+            <i class="fab fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="#" class = "icon-link">
+          <a href="https://twitter.com/AndrewKoechie" class = "icon-link">
             <i class="fab fa-twitter-square"></i>
           </a>
         </li>
-
+        
       </ul>
     </div>
   </div>
 </section>
+<!--
 <section class = "services" id = "services">
   <div class="container">
     <div class="section-heading">
-      <h1>Services</h1>
+      <h1>Skills</h1>
       <h6>What I can do</h6>
       <div class="my-skills">
         <div class="skill">
           <div class="icon-container">
             <i class ="fas fa-layer-group"></i>
           </div>
-          <h1>Web development</h1>
+          <h1>Web Development</h1>
           <p> Full stack web development using MEAN STACK</p>
         </div>
         <div class="skill">
@@ -81,37 +106,46 @@
             <i class ="fas fa-code"></i>
           </div>
           <h1>Software development</h1>
-          <p> Developing expertise in Software development using native react.</p>
+          <p> Developing expertise in Software development .</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+-->
 <section class = "portfolio" id = "portfolio">
   <div class="container">
     <div class="section-heading">
-      <h1>Portfolio</h1>
+      <h1>Projects</h1>
       <h6> Recent work | projects | accomplishments</h6>
     </div>
     <div class="portfolio-item">
+        <div class="portfolio-img has-margin-right">
+            <img src="images/project1.jpeg" alt="">
+          </div>
       <div class="portfolio-description">
         <h6>Software development</h6>
-        <h1>smartCity</h1>
-        <p>A smart app that effortlessy connect you and your friends in the same city
-          and reccomends the nearest convenient hang out spot based on your past preferences
+        <h1>E commerce site</h1>
+        <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. 
+            It has roots in a piece of classical Latin literature from 45 BC, 
+            making it over 2000 years old. Richard McClintock, 
+            a Latin professor at Hampden-Sydney College in Virginia, looked up
         </p>
         <a href="#" class = "cta">View Details</a>
       </div>
-      <div class="portfolio-img">
-        <img src="images/project1.jpeg" alt="">
-      </div>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description">
+      <div class="portfolio-description has-margin-right">
         <h6>web development</h6>
-        <h1>Aso Methodist University</h1>
-        <p>A website for African student organization at Methodist University.
-          Allows coordination of activities and post updates.
+        <h1>Yelp</h1>
+        <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+            praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint 
+            occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, 
+            id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
+            id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+            Temporibus autem quibusdam
         </p>
         <a href="#" class = "cta">View Details</a>
       </div>
@@ -120,54 +154,44 @@
       </div>
     </div>
     <div class="portfolio-item">
-      <div class="portfolio-description has-margin-right">
+        <div class="portfolio-img">
+            <img src="images/project3.jpeg" alt="">
+          </div>
+      <div class="portfolio-description">
         <h6>web development</h6>
-        <h1>Personal websites</h1>
-        <p> personal websites
+        <h1>Blog</h1>
+        <p>
+            But I must explain to you how all this mistaken idea of denouncing 
+            pleasure and praising pain was born and I will give you a complete account of the system, 
+            and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
+             No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, 
+            but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
         </p>
-        <ul>
-          <li><a href="#" class = "cta">View Details</a></li>
-          <li><a href="#" class = "cta">View Details</a></li>
-          <li><a href="#" class = "cta">View Details</a></li>
-        </ul>
-      </div>
-      <div class="portfolio-img has-margin-right">
-        <img src="images/project3.jpeg" alt="">
+        <a href="#" class = "cta">View Details</a>
       </div>
     </div>
   </div>
 </section>
-<section class = "portfolio" id = "portfolio">
+
+<section class = "experience" id = "experience">
   <div class="container">
       <div class="section-heading">
-        <h1>Work experience</h1>
-        <h6>Past & current jobs</h6>
-      </div>
-      <div class = "timeline">
-      <ul>
-        <li class = "date" data-date = "2019 - Present">
-          <h1>Exploration School Inc.</h1>
-          <p>
-            Software troubleshooting and IT coordination activities
-          </p>
-        </li>
-        <li class = "date" data-date = "2018 - 2019">
-          <h1>Methodist University</h1>
-          <p>
-            Work as a computer science tutor. Assist students in solving problem sets.
-          </p>
-        </li>
-        <li class = "date" data-date = "2016 - 2017">
-          <h1>Davis Memorial Library</h1>
-          <p>
-            Desktop help and books cataloging. Ensure conducive enevironment for work
-            and productivity of fellow students. Renting books and electronic gadgets and
-            directing students in the library.
-          </p>
-        </li>
-      </ul>
+        <h1>Skills</h1>
+        <h3>technologies</h3>
+        <div>JQuery</div>
+        <div>Boostrap</div>
+        <div>React</div>
+        <div>Node</div>
+        <div>Express js</div>
+        <div>Java</div>
+        <div>Javascript</div>
+        <div>mongoDB</div>
+        
+        <div>Java</div>
     </div>
 </div>
+
+
 </section>
 <section class = "contact" id = "contact">
   <div class="container">
@@ -184,7 +208,6 @@
           <select id = "service"name="service">
             <option value="">Software development</option>
             <option value="">Web development</option>
-            <option value="">Personal website</option>
           </select>
           <label for="subject">Subject:</label>
           <textarea name="subject" id = "subject"rows="10" cols="10"></textarea>
@@ -192,9 +215,10 @@
       </form>
   </div>
 </section>
-<footer class = "copyright">
-  <div class="up" id = "up">
-    <i class= "fas fa-chevron-up"></i>
+
+<footer class="copyright">
+  <div class="up" id ="up">
+      <i class="fas fa-chevron-up"></i>
   </div>
   <p>&copy; 2019 Andrew Kipkoech</p>
 </footer>
