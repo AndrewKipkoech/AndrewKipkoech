@@ -1,4 +1,5 @@
 
+
 $(document).ready(function(){
   $('.menu-toggler').on('click', function(){
     $(this).toggleClass('open');
@@ -10,21 +11,21 @@ $(document).ready(function(){
     $('.top-nav').removeClass('open');
   })
 
-
   $('nav a[href*="#"]').on('click', function(){
     $('html,body').animate({
-      scrollTop:$($(this).attr('href')).offset()-100
+      scrollTop:$($(this).attr('href')).offset().top-100
     }, 2000);
   });
 
   $('#up').on('click', function(){
     $('html,body').animate({
       scrollTop:0
-    }, 2000);
+    }, 3000);
   });
 
-
 });
+
+
 
 $('.skill-percentage').each(function(){
   var $this = $(this);
@@ -40,3 +41,4 @@ $('.skill-percentage').each(function(){
     }
   })
 });
+
