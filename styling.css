@@ -10,18 +10,15 @@ html{
   color:#eee;
 }
 body{
+  font-family: verdana;
   width: 100%;
   height: 100%;
     background: #232526;  /* fallback for old browsers */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image: linear-gradient(to right top, #0b134c, #001f43, #001f27, #001b11, #13150f);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  /*
-  background:url("images/background.jpeg") no-repeat center fixed;
-  background-size: cover;
-  */
 }
 section{
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 a{
   text-decoration: none;
@@ -30,6 +27,7 @@ a{
 p{
   font-size: 1.5rem;
   font-weight: 300;
+  font-family: verdana;
 }
 img{
   width: 90%;
@@ -116,14 +114,14 @@ li{
   margin: 0 2rem;
 }
 .nav-link{
-  font-family: 'Kaushan Script', cursive;
+  font-family: courier;
   font-size: 2.5rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   padding: 1rem;
 }
 .nav-link:hover,
 .nav-link:focus{
-  background: linear-gradient(to top, #FAFAD2  ,#fd57bf);
+  background: linear-gradient(to top, #FF8C00 ,#5F9EA0);
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
 }
@@ -162,9 +160,8 @@ li{
   z-index: 1;
 }
 .landing-text h1{
-  font-size: 6rem;
-  font-family: 'Kaushan Script', cursive;
-  font-family: 'Libre Baskerville', serif;
+  font-size: 5rem;
+  font-family: ariel;
   background: linear-gradient(to top, #FFFFF0  ,#FDF5E6);
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
@@ -174,7 +171,7 @@ li{
 .landing-text h6{
   font-size: 2rem;
   font-weight: 300;
-  font-family: 'Kaushan Script', cursive;
+  font-family: verdana;
 }
 /*end header*/
 
@@ -239,6 +236,10 @@ li{
   flex: 1;
   width: 50rem
 }
+#project1{
+  width: 500px;
+  height: 350px;
+}
 .portfolio-description{
   flex: 1;
 }
@@ -265,12 +266,11 @@ li{
 .portfolio-description .cta:hover{
   color: #2f67cd;
 }
-/*end portfolio*/
 
-/*start skills*/
 
 .skills{
 font-size: 1.5rem;
+font-family: verdana;
 }
 .tech-left{
   width: 50%;
@@ -335,13 +335,14 @@ select,
 textarea{
   width: 100%;
   padding: 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  margin-top: 3px;
   border: none;
   outline-color:#fd57bf;
 }
 input[type="submit"]{
   width: initial;
-  background-color: #fd57bf;
+  background-color: #FF8C00;
   color: #eee;
   padding: 1rem 2rem;
   border-radius: .8rem;
@@ -349,8 +350,8 @@ input[type="submit"]{
   transition: background-color 650ms;;
 }
 input[type="submit"]:hover{
-color: #221e3f;
-background-color: #ffe838;
+color: #FFF8DC;
+background-color: #FFA07A;
 }
 /*end contact*/
 
@@ -438,7 +439,7 @@ tablet,phone
     right: 2rem;
   }
   .nav-link{
-    font-family: 'Kaushan Script', cursive;
+    font-family: verdana;
     font-size: 2rem;
     letter-spacing: 0.1rem;
     padding: 1rem;
@@ -480,6 +481,7 @@ tablet,phone
   .tech-right{
     width: 100%;
     padding: 10px;
+    margin-top: 0;
   }
 
 }
